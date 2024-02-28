@@ -116,20 +116,9 @@ Article_Name <- html |>
 Article_Name
 
 Article_Description<- html |> 
-  html_elements(".css-1l4spti") |>
+  html_elements(".css-1pga48a") |>
   html_text2()
 Article_Description
-
-# Below is what I believe might be the correct answer, but I am encountering 
-# difficulties in attempting to extract the "article description." Despite 
-# multiple validations of my selector's correctness, its output still shows 
-# as "character(0)". The above might be the answer you need.
-
-# Article_Description<- html |> 
-# html_elements("css-1pga48a e15t083i1") |>
-# html_text2()
-# Article_Description
-
 
 Author_Name<- html |> 
   html_elements(".css-1n7hynb") |>
