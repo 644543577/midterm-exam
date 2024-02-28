@@ -12,30 +12,32 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Basic information
 
-Name: Zhiwei Xin
-Date of birth: September 4th, 1999
-Email: zhiweixin1@gmail.com
-Tel: 3124512076
-Educational background: Master
+Name: Zhiwei Xin <br>
+Date of birth: September 4th, 1999 <br>
+Email: zhiweixin1@gmail.com <br>
+Educational background: Master <br>
+Tel: 3124512076 <br>
+
 
 ## Educational background
 
-North China University of Technology - Computer Science and Technology
-Main courses: Special Topic of C Language Programming (99), C++Language
-Programming (96), Wechat Applet Development (94), Data Structure (90), Digital Image Processing (92), MySQL Database Application (90), WeChat Applet Development, Web Design and Production, Software Testing, Computer Networks Basis and Application, Photoshop Topic
-Graduation design: College Student Dormitory Management System Based on Springboot+Vue
+North China University of Technology - Computer Science and Technology <br>
+Main courses:
+Special Topic of C Language Programming (99), C++Language Programming (96), Wechat Applet Development (94), Data Structure (90), Digital Image Processing (92), MySQL Database Application (90), WeChat Applet Development, Web Design and Production, Software Testing, Computer Networks Basis and Application, Photoshop Topic <br>
+Graduation design:
+College Student Dormitory Management System Based on Springboot+Vue <br>
 
 ## Personal experience
 
-Internship experience - Kingsoft Network  Technology Company - Server Operations Develop Engineer
-1. Maintaining operation of cloud platform service
-2. Handling faults of cloud platform and customer cloud host
-3. Maintaining operation of all components of the OpenStack cloud platform Carrying out daily inspection of the service running
-4. status of the host node where each resource pool is located
-5. Changing and upgrading the resource pool
-6. Compiling operation and maintenance automation scripts
+Internship experience - Kingsoft Network - Technology Company - Server Operations Develop Engineer <br>
+1. Maintaining operation of cloud platform service <br>
+2. Handling faults of cloud platform and customer cloud host <br>
+3. Maintaining operation of all components of the OpenStack cloud platform Carrying out daily inspection of the service running <br>
+4. status of the host node where each resource pool is located <br>
+5. Changing and upgrading the resource pool <br>
+6. Compiling operation and maintenance automation scripts <br>
 
 ## Professional skills
 
-Professional skills: Familiar with c/c++ language programming, data structure (c language), Html, Vue, PS, Spring boot, MySQL, SQL server, Java, Python
-Language skills: English CET-4, with good oral English expression ability
+Professional skills: Familiar with c/c++ language programming, data structure (c language), Html, Vue, PS, Spring boot, MySQL, SQL server, Java, Python <br>
+Language skills: English CET-4, with good oral English expression ability <br>
