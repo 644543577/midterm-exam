@@ -107,18 +107,38 @@ ggplot(cell_data, aes(x = population, y = numberofdeaths, color = as.factor(cell
 library(tidyverse)
 library(rvest)
 
-html <- read_html("https://www.cnn.com/markets")
+html <- read_html("https://www.nytimes.com/topic/subject/elections")
 html
 
-a <- html |> 
-  html_elements(".header-18qFD2") |>
+Article_Name <- html |> 
+  html_elements(".css-8hzhxf") |>
   html_text2()
-a
+Article_Name
 
-b<- html |> 
-  html_elements("#maincontent") |>
+Article_Description<- html |> 
+  html_elements(".css-1l4spti") |>
   html_text2()
-b
+Article_Description
+
+
+# Here are the possible correct answers I believe, but I encountered difficulties in trying to extract the "article description". Despite multiple validations of whether my selector is correct, its output still shows as "character(0)"
+# Article_Description<- html |> 
+# html_elements("css-1pga48a e15t083i1") |>
+# html_text2()
+# Article_Description
+
+
+Author_Name<- html |> 
+  html_elements(".css-1n7hynb") |>
+  html_text2()
+Author_Name
+
+df <- data.frame(Article_Name = Article_Name,
+                 Article_Description = Article_Description,
+                 Author_Name = Author_Name)
+
+# 显示数据框
+view(df)
 ```
 
 html link:
