@@ -121,7 +121,7 @@ b<- html |>
 b
 ```
 
-
-
-Github page link:
+html link:
 https://rpubs.com/Xin123/1154546
+Github page link:
+https://644543577.github.io/midterm-exam/
