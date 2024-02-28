@@ -49,20 +49,16 @@ In essence, the AI-guided career transition and skills enhancement platform prov
 
 ## 2.a
 ```{r}
-# Load necessary libraries
 library(dplyr)
 library(ggplot2)
 
-# Load the data
 cell_data <- read.csv('cell.csv')
 
-# Find the state with a texting ban and the highest number of traffic deaths
 highest_deaths_with_text_ban <- cell_data %>%
   filter(text_ban == 1) %>%
   arrange(desc(numberofdeaths)) %>%
   head(1)
 
-# Print the state with the highest number of traffic deaths among those with a texting ban
 print(highest_deaths_with_text_ban)
 
 ```
@@ -71,7 +67,6 @@ California has the highest number of traffic fatalities.
 
 ## 2.b
 ```{r}
-# Count states with a cell ban, texting ban, and both
 counts_bans <- cell_data %>%
   summarize(
     cell_ban_count = sum(cell_ban == 1),
@@ -79,26 +74,22 @@ counts_bans <- cell_data %>%
     both_bans_count = sum(cell_ban == 1 & text_ban == 1)
   )
 
-# Print the counts
 print(counts_bans)
 
 ```
 
 ## 2.c
 ```{r}
-# Calculate average deaths for states with and without a texting ban
 average_deaths_by_text_ban_status <- cell_data %>%
   group_by(text_ban) %>%
   summarize(average_deaths = mean(numberofdeaths))
 
-# Print the averages
 print(average_deaths_by_text_ban_status)
 
 ```
 
 ## 2.d
 ```{r}
-# Plotting
 ggplot(cell_data, aes(x = population, y = numberofdeaths, color = as.factor(cell_ban))) +
   geom_point() +
   scale_color_manual(values = c('0' = 'red', '1' = 'blue'),
