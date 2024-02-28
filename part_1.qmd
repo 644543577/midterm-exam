@@ -125,15 +125,16 @@ Author_Name<- html |>
   html_text2()
 Author_Name
 
-df <- data.frame(Article_Name = Article_Name,
+tibble(
+  Article_Name = Article_Name,
                  Article_Description = Article_Description,
-                 Author_Name = Author_Name)
+                 Author_Name = Author_Name
+  )
 
-# 显示数据框
-view(df)
 ```
+
+Github page link:
+https://644543577.github.io/midterm-exam/ 
 
 html link:
 https://rpubs.com/Xin123/1154546
-Github page link:
-https://644543577.github.io/midterm-exam/
