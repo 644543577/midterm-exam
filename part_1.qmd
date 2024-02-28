@@ -120,8 +120,11 @@ Article_Description<- html |>
   html_text2()
 Article_Description
 
+# Below is what I believe might be the correct answer, but I am encountering 
+# difficulties in attempting to extract the "article description." Despite 
+# multiple validations of my selector's correctness, its output still shows 
+# as "character(0)". The above might be the answer you need.
 
-# Here are the possible correct answers I believe, but I encountered difficulties in trying to extract the "article description". Despite multiple validations of whether my selector is correct, its output still shows as "character(0)"
 # Article_Description<- html |> 
 # html_elements("css-1pga48a e15t083i1") |>
 # html_text2()
